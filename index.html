@@ -56,14 +56,36 @@
   }
   .note p { margin: 0; }
   .note strong { color: var(--text); font-weight: 600; }
+  .app-icon { display: block; width: 72px; height: 72px; border-radius: 16px; margin: 0 0 1rem; }
+  .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
+  .shots figure { margin: 0; }
+  .shots a { display: block; }
+  .shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--rule); }
+  .shots figcaption { color: var(--muted); font-size: 0.8rem; line-height: 1.35; margin-top: 0.4rem; }
 </style>
 </head>
 <body>
 <main>
 
   <header>
+    <img class="app-icon" src="images/icon/app-store-icon.png" width="1024" height="1024" alt="KickTrack Go app icon">
     <h1>KickTrack Go</h1>
   </header>
+
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/19-play-running-waveform.png"><img src="images/screenshots/19-play-running-waveform.png" width="1320" height="2868" loading="lazy" alt="Play screen with a track running"></a>
+      <figcaption>Play</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/22-timing-routine-timeline.png"><img src="images/screenshots/22-timing-routine-timeline.png" width="1320" height="2868" loading="lazy" alt="Timing screen showing the routine timeline and pre-roll"></a>
+      <figcaption>Timing</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/27-sound-advanced-5-band-eq.png"><img src="images/screenshots/27-sound-advanced-5-band-eq.png" width="1320" height="2868" loading="lazy" alt="Sound screen with the 5-band EQ"></a>
+      <figcaption>Sound</figcaption>
+    </figure>
+  </div>
 
   <ul>
     <li><a href="privacy.html">Privacy policy</a></li>

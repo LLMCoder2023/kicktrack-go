@@ -76,12 +76,19 @@
     font-size: 0.875rem;
   }
   footer p { margin: 0 0 0.35rem; }
+  .app-icon { display: block; width: 72px; height: 72px; border-radius: 16px; margin: 0 0 1rem; }
+  .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
+  .shots figure { margin: 0; }
+  .shots a { display: block; }
+  .shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--rule); }
+  .shots figcaption { color: var(--muted); font-size: 0.8rem; line-height: 1.35; margin-top: 0.4rem; }
 </style>
 </head>
 <body>
 <main>
 
   <header>
+    <img class="app-icon" src="images/icon/app-store-icon.png" width="1024" height="1024" alt="KickTrack Go app icon">
     <h1>Support</h1>
     <p class="app">KickTrack Go</p>
     <p class="dates">Last updated: 21 September 2026</p>
@@ -104,6 +111,17 @@
   and any performance where you start the music, put the phone down, and have to
   be standing still before the first beat.</p>
 
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/18-play-preroll-countdown.png"><img src="images/screenshots/18-play-preroll-countdown.png" width="1320" height="2868" loading="lazy" alt="Pre-roll countdown on the Play screen"></a>
+      <figcaption>Pre-roll counts you in</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/19-play-running-waveform.png"><img src="images/screenshots/19-play-running-waveform.png" width="1320" height="2868" loading="lazy" alt="Play screen with the track running"></a>
+      <figcaption>Then the music starts</figcaption>
+    </figure>
+  </div>
+
   <h2>Getting started</h2>
 
   <h3>1. Add your music</h3>
@@ -113,10 +131,24 @@
   <p>Three sample tracks are already in your library on first launch, including
   a speaker check — you can try everything without importing anything.</p>
 
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/23-music-library.png"><img src="images/screenshots/23-music-library.png" width="1320" height="2868" loading="lazy" alt="Music library with the sample tracks"></a>
+      <figcaption>Music library</figcaption>
+    </figure>
+  </div>
+
   <h3>2. Set your walk-on</h3>
   <p>On the <strong>Timing</strong> screen, set <strong>pre-roll</strong> to how
   many seconds you need to reach your mark. Press play, walk out, and the music
   comes in when you're set.</p>
+
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/22-timing-routine-timeline.png"><img src="images/screenshots/22-timing-routine-timeline.png" width="1320" height="2868" loading="lazy" alt="Timing screen with the routine timeline and pre-roll setting"></a>
+      <figcaption>Routine timeline and pre-roll</figcaption>
+    </figure>
+  </div>
 
   <h3>3. Cut it to the clock</h3>
   <p>Still on Timing, set <strong>play for</strong> to your routine's length and
@@ -124,12 +156,34 @@
   partway into the song. The timeline shows silence, music and fade as one
   picture, so you can see the routine before you hear it.</p>
 
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/33-timing-play-for-and-fade.png"><img src="images/screenshots/33-timing-play-for-and-fade.png" width="1320" height="2868" loading="lazy" alt="Timing screen with play-for and fade settings"></a>
+      <figcaption>Play for and fade</figcaption>
+    </figure>
+  </div>
+
   <h3>4. Shape the sound</h3>
   <p>The <strong>Sound</strong> screen has a 5-band EQ, plus
   <strong>Bass Boost</strong> and <strong>Vocal Clarity</strong> under
   Enhancements for rooms that swallow either. <strong>Quick adjust</strong>
   nudges bass or vocals in one tap. Save a tone you like as a preset and reuse
   it on other tracks.</p>
+
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/27-sound-advanced-5-band-eq.png"><img src="images/screenshots/27-sound-advanced-5-band-eq.png" width="1320" height="2868" loading="lazy" alt="Sound screen with the 5-band EQ"></a>
+      <figcaption>5-band EQ</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/30-sound-advanced-enhancements.png"><img src="images/screenshots/30-sound-advanced-enhancements.png" width="1320" height="2868" loading="lazy" alt="Sound screen enhancements: Bass Boost and Vocal Clarity"></a>
+      <figcaption>Enhancements</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/20-sound-simple-quick-adjust.png"><img src="images/screenshots/20-sound-simple-quick-adjust.png" width="1320" height="2868" loading="lazy" alt="Quick adjust for bass and vocals"></a>
+      <figcaption>Quick adjust</figcaption>
+    </figure>
+  </div>
 
   <h2>Competition day</h2>
 
@@ -139,6 +193,21 @@
   <p>Every song in an event carries its own pre-roll, play limit, fade and EQ —
   so the same audio file can run as a 60-second cut in prelims and a 90-second
   cut in finals, with nothing to change between them.</p>
+
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/24-events-empty-new-performance-sheet.png"><img src="images/screenshots/24-events-empty-new-performance-sheet.png" width="1320" height="2868" loading="lazy" alt="New Performance sheet on the Events tab"></a>
+      <figcaption>New performance</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/25-event-detail-one-song.png"><img src="images/screenshots/25-event-detail-one-song.png" width="1320" height="2868" loading="lazy" alt="Event detail with one song in its playlist"></a>
+      <figcaption>Event playlist</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/32-timing-timeline-event-short-run.png"><img src="images/screenshots/32-timing-timeline-event-short-run.png" width="1320" height="2868" loading="lazy" alt="Timing timeline for a shorter cut inside an event"></a>
+      <figcaption>Per-event cut</figcaption>
+    </figure>
+  </div>
 
   <h2>Test before you perform</h2>
 
@@ -157,6 +226,17 @@
 
   <p>Check the battery and the connection too, and play the bundled speaker
   check through the venue's system when you can get to it early.</p>
+
+  <div class="shots">
+    <figure>
+      <a href="images/screenshots/14-tutorial-advanced-check-the-pa.png"><img src="images/screenshots/14-tutorial-advanced-check-the-pa.png" width="1320" height="2868" loading="lazy" alt="Tutorial page: check the PA"></a>
+      <figcaption>Check the PA</figcaption>
+    </figure>
+    <figure>
+      <a href="images/screenshots/15-tutorial-advanced-competition-day.png"><img src="images/screenshots/15-tutorial-advanced-competition-day.png" width="1320" height="2868" loading="lazy" alt="Tutorial page: competition day"></a>
+      <figcaption>Competition day</figcaption>
+    </figure>
+  </div>
 
   <h2>Common questions</h2>
 
