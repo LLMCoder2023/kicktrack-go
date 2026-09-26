@@ -75,10 +75,24 @@
     font-size: 0.875rem;
   }
   .app-icon { display: block; width: 72px; height: 72px; border-radius: 16px; margin: 0 0 1rem; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0 0 2rem; font-size: 0.95rem; }
+  .site-nav a { color: var(--accent); text-decoration: none; }
+  .site-nav a:hover { text-decoration: underline; }
+  .site-nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+  .to-top { margin: 1.5rem 0 0; font-size: 0.875rem; }
+  .to-top a { color: var(--muted); }
 </style>
 </head>
 <body>
-<main>
+<main id="top">
+
+  <nav class="site-nav" aria-label="Site">
+    <a href="index.html">Home</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+  </nav>
 
   <header>
     <img class="app-icon" src="images/icon/app-store-icon.png" width="1024" height="1024" alt="KickTrack Go app icon">
@@ -93,9 +107,13 @@
     <p>The app has no network capability at all. It contains no analytics, no crash reporting, no advertising, no tracking, and no third-party SDKs. Everything you put into the app stays on your device.</p>
   </div>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Information we collect</h2>
   <p><strong>None.</strong></p>
   <p>We do not collect personal information, usage data, device identifiers, advertising identifiers, location, contacts, photos, or diagnostics. There is no account to create, nothing to log into, and no way to send us your data through the app.</p>
+
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
   <h2>Information stored on your device</h2>
   <p>The app saves the following in its own private storage area on your device, so that it works the way you left it. This information is never transmitted anywhere.</p>
@@ -116,13 +134,19 @@
   <p>All of this lives inside the app's private container. It is not visible to other apps, and it is not shared with us or anyone else.</p>
   <p><strong>Deleting the app deletes all of it.</strong> There is no copy anywhere else.</p>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Audio files you choose</h2>
   <p>When you add music, iOS shows you its own file picker. The app receives only the specific file you select, and copies it into its private storage so playback keeps working later.</p>
   <p>The app cannot browse your music library, your files, or your photos. It sees only what you hand it, when you hand it over.</p>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Playback information shown by iOS</h2>
   <p>While a track is playing, the app tells iOS the track's title and length so that iOS can display it on your Lock Screen and operate playback from your AirPods, car, or Apple Watch.</p>
   <p>This is a standard iOS feature. The information stays on your device and is handled by iOS, not by us. It is cleared when playback stops.</p>
+
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
   <h2>Apple's required-reason API disclosures</h2>
   <p>Apple requires apps to declare why they use certain system APIs. KickTrack Go declares two, both in its bundled privacy manifest:</p>
@@ -132,23 +156,35 @@
   </ul>
   <p>Neither is used to identify you or your device, and neither value is stored or transmitted.</p>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Third parties</h2>
   <p>There are none.</p>
   <p>The app links no third-party libraries, embeds no software development kits, and communicates with no servers - including ours. We do not have servers for this app.</p>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Children's privacy</h2>
   <p>Because the app collects no information from anyone, it collects no information from children. It contains no advertising, no third-party content, no links out to the web, and no way to communicate with anyone through it.</p>
+
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
   <h2>Your rights</h2>
   <p>Privacy laws such as the GDPR and the CCPA give you rights to access, correct, export, and delete the personal information a company holds about you.</p>
   <p>We hold none. There is nothing for us to show you, change, or delete, because nothing ever reaches us. The data on your device is entirely under your control and is removed completely when you delete the app.</p>
 
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
+
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version will be posted here with a new effective date. Because the app collects nothing, we do not expect material changes; if that ever changed, it would be disclosed here and in the app's App Store listing before it took effect.</p>
+
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
   <h2>Contact</h2>
   <p>Questions about this policy can be sent to:</p>
   <p class="contact"><strong><a href="mailto:support@kicktrackgo.com">support@kicktrackgo.com</a></strong></p>
+
+  <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
 </main>
 </body>
