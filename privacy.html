@@ -182,10 +182,18 @@
 
   <h2>Contact</h2>
   <p>Questions about this policy can be sent to:</p>
-  <p class="contact"><strong><a href="mailto:support@kicktrackgo.com">support@kicktrackgo.com</a></strong></p>
+  <p class="contact"><strong><a class="email" data-user="support" data-domain="kicktrackgo.com" href="support.html#contact">support [at] kicktrackgo [dot] com</a></strong></p>
 
   <p class="to-top"><a href="#top">Back to top ↑</a></p>
 
 </main>
+<script>
+  // Build the support address at runtime so it never appears in the HTML for scrapers.
+  document.querySelectorAll('a.email').forEach(function (a) {
+    var addr = a.dataset.user + '@' + a.dataset.domain;
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+  });
+</script>
 </body>
 </html>
